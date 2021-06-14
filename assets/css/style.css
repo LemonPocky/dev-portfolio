@@ -5,6 +5,10 @@
     font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
 }
 
+.header {
+    text-align: center;
+}
+
 .nav-bar {
     /* Nav bar container controls how elements appear in the flex box */
     display: flex;
@@ -15,6 +19,7 @@
     /* Placement */
     display: inline-block;
     margin: 1% auto;
+    padding: 8px 0;
     text-align: center;
     width: 50%;
 
@@ -41,6 +46,15 @@
     line-height: 150%;
     color: rgb(253, 240, 221);
     background-color: rgba(75, 75, 75, 0.7);
+}
+
+.about-me {
+    text-align: center;
+}
+
+.about-me p {
+    line-height: 150%;
+    margin: 0 20%;
 }
 
 /* Tablet-specific elements */
