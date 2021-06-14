@@ -1,5 +1,10 @@
 /* This CSS takes a mobile-first approach */
 
+/* Set up CSS variables */
+:root {
+    --work-color: rgb(146, 0, 165);
+}
+
 * {
     /* Set default fonts for text */
     font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
@@ -9,12 +14,15 @@
     text-align: center;
 }
 
+/* TODO: Add separating lines between sections */
+
 .nav-bar {
     /* Nav bar container controls how elements appear in the flex box */
     display: flex;
     flex-wrap: wrap;
 }
 
+/* TODO: Bold items on hover */
 .nav-bar-item {
     /* Placement */
     display: inline-block;
@@ -29,6 +37,9 @@
     color: black;
 }
 
+/* In web design, a hero image is a large web banner image, 
+ * prominently placed on a web page, generally in the front and center. 
+ * - Wikipedia */
 .hero {
     position: relative;
 }
@@ -38,8 +49,10 @@
 }
 
 .hero-caption {
+    /* Overlay hero text on image */
     position: absolute;
     bottom: 0%;
+
     margin-left: 3%;
     margin-right: 60%;
     padding: 0.5em;
@@ -56,6 +69,68 @@
     line-height: 150%;
     margin: 0 20%;
 }
+
+.my-work h2 {
+    text-align: center;
+}
+
+.work-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-featured {
+    position: relative;
+    flex: 100%;
+    margin: 0 10%;
+}
+
+.work-featured img {
+    width: 100%;
+    border: 10px solid var(--work-color);
+    border-radius: 30px;
+}
+
+.work-featured figcaption {
+    /* Overlay caption text on image */
+    position: absolute;
+    bottom: 15%;
+
+    font-size: 30px;
+    margin-left: 0%;
+    padding: 1rem;
+    letter-spacing: 0.05em;
+    color: rgb(226, 226, 226);
+    font-weight: bold;
+    background-color: var(--work-color);
+}
+
+.work-item {
+    position: relative;
+    flex: 100%;
+    margin: 0 10%;
+}
+
+.work-item img {
+    width: 100%;
+    border: 10px solid var(--work-color);
+    border-radius: 30px;
+}
+
+.work-item figcaption {
+    /* Overlay caption text on image */
+    position: absolute;
+    bottom: 15%;
+
+    font-size: 30px;
+    margin-left: 0%;
+    padding: 1rem;
+    letter-spacing: 0.05em;
+    color: rgb(226, 226, 226);
+    font-weight: bold;
+    background-color: var(--work-color);
+}
+
 
 /* Tablet-specific elements */
 @media screen and (min-width: 420px) {
