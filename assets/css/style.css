@@ -1,5 +1,25 @@
 /* This CSS takes a mobile-first approach */
 
+* {
+    /* Set default fonts for text */
+    font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-bar-item {
+    display: inline-block;
+    margin: 1em auto;
+    text-align: center;
+    width: 50%;
+    border: solid;
+    border-radius: 50px;
+    color: black;
+}
+
 
 /* Tablet-specific elements */
 @media screen and (min-width: 420px) {
