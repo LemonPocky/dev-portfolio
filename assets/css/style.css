@@ -35,6 +35,8 @@
     border: solid;
     border-radius: 50px;
     color: black;
+
+    text-decoration: none;
 }
 
 /* In web design, a hero image is a large web banner image, 
@@ -79,32 +81,6 @@
     flex-wrap: wrap;
 }
 
-.work-featured {
-    position: relative;
-    flex: 100%;
-    margin: 0 10%;
-}
-
-.work-featured img {
-    width: 100%;
-    border: 10px solid var(--work-color);
-    border-radius: 30px;
-}
-
-.work-featured figcaption {
-    /* Overlay caption text on image */
-    position: absolute;
-    bottom: 15%;
-
-    font-size: 30px;
-    margin-left: 0%;
-    padding: 1rem;
-    letter-spacing: 0.05em;
-    color: rgb(226, 226, 226);
-    font-weight: bold;
-    background-color: var(--work-color);
-}
-
 .work-item {
     position: relative;
     flex: 100%;
@@ -129,6 +105,33 @@
     color: rgb(226, 226, 226);
     font-weight: bold;
     background-color: var(--work-color);
+}
+
+/* .work-item.featured {
+
+} */
+
+.contact-me {
+    text-align: center;
+}
+
+.contact-links {
+    /* Contact links container controls how elements appear in the flex box */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* TODO: Bold items on hover */
+.contact-link-item {
+    /* Placement */
+    display: inline-block;
+    margin: 1% auto;
+    text-align: center;
+    text-decoration: none;
+
+    /* Underline */
+    border-bottom: 0.3em solid;
+    color: black;
 }
 
 
