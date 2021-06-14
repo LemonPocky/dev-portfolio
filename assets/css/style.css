@@ -6,20 +6,42 @@
 }
 
 .nav-bar {
+    /* Nav bar container controls how elements appear in the flex box */
     display: flex;
     flex-wrap: wrap;
 }
 
 .nav-bar-item {
+    /* Placement */
     display: inline-block;
-    margin: 1em auto;
+    margin: 1% auto;
     text-align: center;
     width: 50%;
+
+    /* Circular border */
     border: solid;
     border-radius: 50px;
     color: black;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-caption {
+    position: absolute;
+    bottom: 0%;
+    margin-left: 3%;
+    margin-right: 60%;
+    padding: 0.5em;
+    line-height: 150%;
+    color: rgb(253, 240, 221);
+    background-color: rgba(75, 75, 75, 0.7);
+}
 
 /* Tablet-specific elements */
 @media screen and (min-width: 420px) {
