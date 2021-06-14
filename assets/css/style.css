@@ -2,7 +2,9 @@
 
 /* Set up CSS variables */
 :root {
+    --header-color: #FFF;
     --work-color: rgb(146, 0, 165);
+    --section-margin: 15%;
 }
 
 * {
@@ -11,10 +13,24 @@
 }
 
 .header {
+    color: var(--header-color);
     text-align: center;
+    padding: 15px 0;    
+    margin-bottom: var(--section-margin);
+    
+    /* https://stackoverflow.com/questions/23208200/how-to-darken-a-background-using-css */
+    background-image: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/pocky_by_mpokki_placeholder.jpg");
 }
 
-/* TODO: Add separating lines between sections */
+.header h1 {
+    margin-top: 15px;
+    font-size: 50px;
+}
 
 .nav-bar {
     /* Nav bar container controls how elements appear in the flex box */
@@ -34,10 +50,12 @@
     /* Circular border */
     border: solid;
     border-radius: 50px;
-    color: black;
+    color: var(--header-color);
 
     text-decoration: none;
 }
+
+/* TODO: Add separating lines between sections */
 
 /* In web design, a hero image is a large web banner image, 
  * prominently placed on a web page, generally in the front and center. 
@@ -65,11 +83,16 @@
 
 .about-me {
     text-align: center;
+    margin-bottom: var(--section-margin);
 }
 
 .about-me p {
     line-height: 150%;
     margin: 0 20%;
+}
+
+.my-work {    
+    margin-bottom: var(--section-margin);
 }
 
 .my-work h2 {
