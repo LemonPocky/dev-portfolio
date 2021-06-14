@@ -83,7 +83,6 @@
 
 .work-item {
     position: relative;
-    flex: 100%;
     margin: 0 10%;
 }
 
@@ -122,17 +121,22 @@
 }
 
 /* TODO: Bold items on hover */
-.contact-link-item {
+/* This span is needed as a container so the link doesn't reach across the whole page */
+.contact-links span {
     /* Placement */
-    display: inline-block;
-    margin: 1% auto;
-    text-align: center;
-    text-decoration: none;
+    display: block;
+    margin: 3% auto;
+    width: 100%;
+    text-align: center;    
+}
 
+.contact-link-item {
+    text-decoration: none;
+    
     /* Underline */
     border-bottom: 0.3em solid;
     color: black;
-}
+}]
 
 
 /* Tablet-specific elements */
