@@ -57,30 +57,6 @@
 
 /* TODO: Add separating lines between sections */
 
-/* In web design, a hero image is a large web banner image, 
- * prominently placed on a web page, generally in the front and center. 
- * - Wikipedia */
-.hero {
-    position: relative;
-}
-
-.hero-img {
-    width: 100%;
-}
-
-.hero-caption {
-    /* Overlay hero text on image */
-    position: absolute;
-    bottom: 0%;
-
-    margin-left: 3%;
-    margin-right: 60%;
-    padding: 0.5em;
-    line-height: 150%;
-    color: rgb(253, 240, 221);
-    background-color: rgba(75, 75, 75, 0.7);
-}
-
 .about-me {
     text-align: center;
     margin-bottom: var(--section-margin);
