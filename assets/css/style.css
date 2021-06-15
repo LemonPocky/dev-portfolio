@@ -4,6 +4,7 @@
 :root {
     --header-color: #FFF;
     --work-color: rgb(146, 0, 165);
+    --contact-color: rgb(62, 59, 255);
     --section-margin: 15%;
 }
 
@@ -113,6 +114,13 @@
 
 .contact-me {
     text-align: center;
+    background-color: var(--contact-color);
+    padding: 30px 0;
+}
+
+.contact-me h2 {
+    color: var(--header-color);    
+    letter-spacing: 0.05em;
 }
 
 .contact-links {
@@ -138,6 +146,7 @@
     border: 0.1rem solid;
     border-radius: 5px;
     color: black;
+    background-color: var(--header-color);
 }]
 
 
