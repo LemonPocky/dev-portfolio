@@ -129,10 +129,10 @@
     /* Contact links container controls how elements appear in the flex box */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0 10px;
 }
 
-/* TODO: Bold items on hover */
 /* This span is needed as a container so the link doesn't reach across the whole page */
 .contact-links span {
     /* Placement */
@@ -189,9 +189,13 @@
         color: black;
     }
 
+    .work-box {
+        margin: 0 20%;
+    }
+
     .work-item {
         /* Two columns for work items */
-        flex: 1 1 35%;
+        flex: 1 1 30%;
 
         /* Semi-transparent unless hovered */
         opacity: 70%;
@@ -213,6 +217,16 @@
     }
 
     .work-item.featured figcaption {        
-        font-size: 6vw;
+        font-size: 4vw;
+    }
+
+    .contact-link-item {
+        /* Transparent bg unless hovered */
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .contact-link-item:hover {
+        background-color: var(--header-color);
+        color: black;
     }
 }
