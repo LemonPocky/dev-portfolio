@@ -59,12 +59,14 @@
 
 .about-me {
     text-align: center;
+    margin: 0 20%;
     margin-bottom: var(--section-margin);
+    border: double;
 }
 
 .about-me p {
     line-height: 150%;
-    margin: 0 20%;
+    padding: 2rem;
 }
 
 .my-work {    
@@ -132,8 +134,9 @@
 .contact-link-item {
     text-decoration: none;
     
-    /* Underline */
-    border-bottom: 0.3em solid;
+    padding: 0.5rem;
+    border: 0.1rem solid;
+    border-radius: 5px;
     color: black;
 }]
 
