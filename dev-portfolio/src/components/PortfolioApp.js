@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import About from './pages/About';
+import Works from './pages/Works';
+import Header from './Header';
 
-export default function PortfolioContainer() {
+export default function PortfolioApp() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   // This function is checking to see what the value of `currentPage` is.
@@ -11,16 +14,24 @@ export default function PortfolioContainer() {
       case 'About':
         return <About />;
 
-      case 'Portfolio':
-        return <Portfolio />;
+      case 'My Work':
+        return <Works />;
 
-      case 'Contact':
-        return <Contact />;
+      // case 'Contact':
+      //   return <Contact />;
 
       default:
         return <About />;
     }
   };
 
-  return <div>{renderPage()}</div>;
+  const handlePageChange = (page) => setCurrentPage(page);
+
+  return (
+    <div>
+      <Header handlePageChange={handlePageChange} />
+
+      {renderPage()}
+    </div>
+  );
 }
