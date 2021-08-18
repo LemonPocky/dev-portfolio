@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import About from './pages/About';
 import Works from './pages/Works';
+import Contact from './pages/Contact';
 import Header from './Header';
 
 export default function PortfolioApp() {
@@ -14,11 +15,11 @@ export default function PortfolioApp() {
       case 'About':
         return <About />;
 
-      case 'My Work':
+      case 'My Works':
         return <Works />;
 
-      // case 'Contact':
-      //   return <Contact />;
+      case 'Contact':
+        return <Contact />;
 
       default:
         return <About />;

@@ -18,8 +18,8 @@ export default function Header({ handlePageChange }) {
               <NavLink onClick={() => handlePageChange('About')}>About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={() => handlePageChange('My Work')}>
-                My Work
+              <NavLink onClick={() => handlePageChange('My Works')}>
+                My Works
               </NavLink>
             </NavItem>
             <NavItem>
