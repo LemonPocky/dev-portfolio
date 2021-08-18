@@ -8,37 +8,14 @@
   --section-margin: 5rem;
 }
 
-* {
-  /* Set default fonts for text */
-  font-family: 'Roboto', 'Franklin Gothic Medium', Tahoma, sans-serif;
-}
-
 .header {
   /* https://stackoverflow.com/questions/23208200/how-to-darken-a-background-using-css */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../images/pocky_by_mpokki_placeholder.jpg');
 }
 
-.nav-bar {
-  /* Nav bar container controls how elements appear in the flex box */
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nav-bar-item {
-  /* Placement */
-  display: inline-block;
-  margin: 1% auto;
-  padding: 8px 0;
-  text-align: center;
-  width: 60%;
-
-  /* Circular border */
-  border: solid var(--header-color);
-  border-radius: 50px;
-  color: var(--header-color);
-
-  text-decoration: none;
+.jumbotron {
+  padding: 5em;
 }
 
 .about-me {
@@ -53,51 +30,9 @@
   padding: 1rem;
 }
 
-.my-work {
-  margin-bottom: var(--section-margin);
-}
-
 .my-work h2 {
   text-align: center;
 }
-
-.work-box {
-  /* Work items container controls how elements appear in the flex box */
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 5%;
-}
-
-.work-item {
-  position: relative;
-
-  /* Grow or shrink to always fit the flex box */
-  flex: 1 1 100%;
-}
-
-.work-item img {
-  width: 100%;
-  border: 10px solid var(--work-color);
-  border-radius: 30px;
-}
-
-.work-item figcaption {
-  /* Overlay caption text on image */
-  position: absolute;
-  bottom: 15%;
-
-  font-size: 6vw;
-  margin-left: 0%;
-  padding: 0.5em;
-  letter-spacing: 0.05em;
-  color: rgb(226, 226, 226);
-  font-weight: bold;
-  background-color: var(--work-color);
-}
-
-/* .work-item.featured {
-
-} */
 
 .contact-me {
   text-align: center;
