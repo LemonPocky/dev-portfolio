@@ -33,7 +33,21 @@
   padding-bottom: 5em;
 }
 
-.projectItem {
+.about-me {
+  padding-top: 2em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.project-item {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.contact-form {
+  padding-left: 5em;
+  padding-right: 5em;
   padding-top: 2em;
   padding-bottom: 2em;
 }

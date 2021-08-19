@@ -27,13 +27,10 @@ export default function Header({ handlePageChange }) {
                 Contact
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="resume">Resume</NavLink>
-            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div className="jumbotron mb-4 bg-light">
+      <div className="jumbotron bg-light">
         <Container className="text-center">
           <h1>Portfolio of Lily Huang</h1>
           <h4>Software Engineer</h4>

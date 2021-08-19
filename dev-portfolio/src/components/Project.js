@@ -10,8 +10,12 @@ export default function Project({
 }) {
   return (
     <>
-      <img src={imagePath} className="vw-100" alt={altText} />
       <a href={deployedLink}>
+        <img
+          src={imagePath}
+          className="w-75 border border-secondary border-5"
+          alt={altText}
+        />
         <h3 className="text-center">{title}</h3>
       </a>
       <a href={githubLink}>
