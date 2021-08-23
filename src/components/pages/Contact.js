@@ -4,32 +4,24 @@ import Button from 'react-bootstrap/Button';
 
 export default function Contact() {
   return (
-    <div className="contact-container bg-secondary">
-      <h1 className="text-center pt-4">Contact Me</h1>
-      <Form className="contact-form">
-        <Form.Group className="mb-3" controlId="contactName">
-          <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Name" />
-        </Form.Group>
+    <div className="contact-container bg-secondary text-center pb-2">
+      <h1 className="pt-4">Contact Me</h1>
 
-        <Form.Group className="mb-3" controlId="contactEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="example@example.com" />
-        </Form.Group>
+      <Button className="contact-button my-2 d-block mx-auto" variant="light">
+        Email: lil.lily.huang@gmail.com
+      </Button>
 
-        <Form.Group className="mb-3" controlId="contactMessage">
-          <Form.Label>Message</Form.Label>
-          <Form.Control
-            as="textarea"
-            placeholder="Message (optional)"
-            rows={4}
-          />
-        </Form.Group>
+      <Button className="contact-button my-2 d-block mx-auto" variant="light">
+        Phone: (714) 235-3698
+      </Button>
 
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+      <Button
+        className="contact-button"
+        variant="light"
+        href="https://github.com/LemonPocky"
+      >
+        <span className="text-decoration-underline">GitHub: LemonPocky</span>
+      </Button>
     </div>
   );
 }
